@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+<!--    <bean id="t1" class="kr.hs.study.springteststudy.beans.TestBean"/>
+
+    <bean id="t2" class="kr.hs.study.springteststudy.beans.TestBean">
+        <constructor-arg index="0" value="100" type="int"/>
+        <constructor-arg index="1" value="spring" type="java.lang.String"/>
+    </bean>
+
+    <bean id="d1" class="kr.hs.study.springteststudy.beans.DataBean"/>
+    <bean id="t3" class="kr.hs.study.springteststudy.beans.TestBean">
+        &lt;!&ndash;<constructor-arg ref="d1"/>&ndash;&gt;
+        <constructor-arg>
+            <bean class="kr.hs.study.springteststudy.beans.DataBean"/>
+        </constructor-arg>
+    </bean>-->
+
+<!--    <bean id="d1" class="kr.hs.study.springteststudy.beans.DataBean"/>
+    <bean id="pro-bean1" class="kr.hs.study.springteststudy.beans.TestBean2">
+        <property name="data1" value="100"/>
+        <property name="data2" value="spring"/>
+        <property name="data3" ref="d1"/>
+    </bean>-->
+
+<!--    <bean id="data1" class="kr.hs.study.springteststudy.beans.DataBean"/>
+    <bean id="t1" class="kr.hs.study.springteststudy.beans.TestBean3" autowire="byName"/>-->
+<!--    <bean class="kr.hs.study.springteststudy.beans.DataBean"/>
+    <bean id="t1" class="kr.hs.study.springteststudy.beans.TestBean3" autowire="byType"/>-->
+<!--    <bean id="data1" class="kr.hs.study.springteststudy.configStudy.beans.DataBean"/>
+    <bean id="t1" class="kr.hs.study.springteststudy.configStudy.beans.TestBean3" autowire="constructor"/>-->
+
+
+   <!-- <context:component-scan base-package="kr.hs.study.springteststudy.AnnotationStudy.beans"/>-->
+
+    <context:annotation-config/>
+    <bean id="t1" class="kr.hs.study.springteststudy.AnnotationStudy.beans.TestBean3"/>
+    <bean class="kr.hs.study.springteststudy.AnnotationStudy.beans.DataBean"/>
+
+
+</beans>
