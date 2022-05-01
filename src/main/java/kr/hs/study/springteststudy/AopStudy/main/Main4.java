@@ -12,6 +12,7 @@ public class Main4 {
         System.out.println(t1);
         t1.method1();
         t1.method2();
+        t1.method3();
 
         ctx.close();
     }

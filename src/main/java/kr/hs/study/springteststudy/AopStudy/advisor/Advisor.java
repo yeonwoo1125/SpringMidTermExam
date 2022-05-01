@@ -14,4 +14,10 @@ public class Advisor {
         p.proceed();
         System.out.println("around 2");
     }
+    public void aroundReturningMethod(){
+        System.out.println("aroundReturning");
+    }
+    public void aroundThrowingMethod(Throwable e){
+        System.out.println("aroundThrowing");
+    }
 }

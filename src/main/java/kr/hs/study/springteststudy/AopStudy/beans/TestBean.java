@@ -7,4 +7,7 @@ public class TestBean {
     public void method2(){
         System.out.println("method2");
     }
+    public void method3(){
+        throw new IllegalStateException();
+    }
 }
