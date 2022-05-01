@@ -8,9 +8,10 @@
 
     <aop:config>
         <aop:aspect ref="advisor">
-            <aop:pointcut id="method1" expression="execution(* method1())"/>
-            <aop:before method="beforeMethod" pointcut-ref="method1"/>
-            <aop:around method="aroundMethod" pointcut-ref="method1"/>
+            <aop:pointcut id="method" expression="execution(* method*())"/>
+            <aop:before method="beforeMethod" pointcut-ref="method"/>
+            <aop:after method="afterMethod" pointcut-ref="method"/>
+            <!--<aop:around method="aroundMethod" pointcut-ref="method"/>-->
         </aop:aspect>
     </aop:config>
 </beans>

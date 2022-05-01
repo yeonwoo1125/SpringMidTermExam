@@ -11,6 +11,7 @@ public class Main4 {
         TestBean t1 = ctx.getBean("t1",TestBean.class);
         System.out.println(t1);
         t1.method1();
+        t1.method2();
 
         ctx.close();
     }

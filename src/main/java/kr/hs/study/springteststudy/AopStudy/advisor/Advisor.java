@@ -6,6 +6,9 @@ public class Advisor {
     public void beforeMethod(){
         System.out.println("before Method");
     }
+    public void afterMethod(){
+        System.out.println("after Method");
+    }
     public void aroundMethod(ProceedingJoinPoint p) throws Throwable{
         System.out.println("around 1");
         p.proceed();
